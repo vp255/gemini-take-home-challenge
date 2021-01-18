@@ -24,12 +24,9 @@ void VerifyIsBetterOrEqual() {
 }
 
 void Run() {
-
   std::cout << "Verifying utility functions" << '\n';
   VerifyImprove();
   VerifyIsBetterOrEqual();
-  std::cout << "PASS" << '\n';
-
 }
 
 }
