@@ -36,9 +36,9 @@ std::istream& operator>>(std::istream& iss, Side& side) {
   std::string token;
   iss >> token;
   if (token == "BUY")
-    side =  Side::Buy;
+    side = Side::Buy;
   else if (token == "SELL")
-    side =  Side::Sell;
+    side = Side::Sell;
   return iss;
 }
 

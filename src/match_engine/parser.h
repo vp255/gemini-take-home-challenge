@@ -27,9 +27,9 @@ public:
             >> size
             >> price;
         if (side == Side::Buy)
-            listing.template addOrder<Side::Buy>(orderid, instrument, size, price);
+            listing.template addOrder<Side::Buy>(std::move(orderid), instrument, size, price);
         else 
-            listing.template addOrder<Side::Sell>(orderid, instrument, size, price);
+            listing.template addOrder<Side::Sell>(std::move(orderid), instrument, size, price);
     }
 private:
     Listing& listing;

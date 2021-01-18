@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdio.h>
+
 #include "book_listing.h"
 #include "parser.h"
 
@@ -11,7 +12,7 @@ int main() {
   Parser<BookListing> parser(listing);
 
   while (getline(std::cin, line)) {
-    parser.parse(line);
+      parser.parse(line);
   }
   std::cout << '\n'; 
   listing.printRestingOrdersInOrder();
